@@ -1,0 +1,15 @@
+# Dependencies — kabhi commit nahi hote
+node_modules/
+
+# Environment variables — OWASP A02 — secrets commit nahi hote kabhi
+.env
+.env.local
+.env.production
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
