@@ -176,8 +176,22 @@ npm run dev
 ## 📈 Development Progress
 
 - [x] System architecture design
+- [x] RBAC permission matrix defined
 - [x] Database schema design (9 models)
-- [ ] Express server setup
+  - [x] User.model.js
+  - [x] Event.model.js
+  - [x] Test.model.js
+  - [x] Submission.model.js
+  - [x] ClubProfile.model.js
+  - [x] Leader.model.js
+  - [x] Achievement.model.js
+  - [x] FAQ.model.js
+  - [x] JoinRequest.model.js
+- [x] Express server setup
+- [x] MongoDB local connection
+- [x] Security middleware (helmet, cors, rate-limit, morgan)
+- [x] Backend folder structure
+- [ ] JWT utilities
 - [ ] Authentication system
 - [ ] Member portal
 - [ ] Admin panel
