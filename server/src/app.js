@@ -3,6 +3,7 @@ const helmet = require('helmet')
 const cors = require('cors')
 const morgan = require('morgan')
 const rateLimit = require('express-rate-limit')
+const errorHandler = require('./middleware/error.middleware');
 
 const app = express()
 
@@ -52,5 +53,9 @@ app.get('/api/health', (req, res) => {
         environment: process.env.NODE_ENV,
     })
 })
+
+// error handler — hamesha sabse last middleware hota hai
+// saare routes ke baad — agar koi error throw hua toh yahan aayega
+app.use(errorHandler)
 
 module.exports = app
